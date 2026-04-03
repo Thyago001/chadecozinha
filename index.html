@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Cozinha - Deise &amp; Jhonatan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Music Control -->
+    <div class="music-control" id="musicControl">
+        <button id="musicToggle" class="music-btn" aria-label="Controlar música">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18V5l12-2v13"></path>
+                <circle cx="6" cy="18" r="3"></circle>
+                <circle cx="18" cy="16" r="3"></circle>
+            </svg>
+        </button>
+    </div>
+    <audio id="backgroundMusic" loop>
+        <source src="Married Life.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Decorative Flowers -->
+        <div class="flower-decoration flower-top-left"></div>
+        <div class="flower-decoration flower-top-right"></div>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="kitchen-icon">🌸</div>
+                <h1 class="title">Chá de Cozinha</h1>
+                <div class="couple-names">Deise <span class="heart">♥</span> Jhonatan</div>
+                <div class="invitation-photo">
+                    <img src="convite.png" class="photo-preview" alt="Convite Chá de Cozinha" onerror="this.style.display='none'">
+                </div>
+                <div class="kitchen-icons">
+                    <span class="icon">🍳</span>
+                    <span class="icon">🥘</span>
+                    <span class="icon">🔪</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="section-divider">🌸</div>
+            <h2>Como <span class="highlight">Funciona</span></h2>
+            
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">✍️</div>
+                    <h3>Como Confirmar Presença</h3>
+                    <div class="info-steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <p>Vá até a seção "Confirme sua Presença" abaixo</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <p>Digite seu nome (ou nomes dos convidados)</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <p>Selecione o número de pessoas que irão</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">4</span>
+                            <p>Clique em "Confirmar Presença" e pronto!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">🎁</div>
+                    <h3>Como Escolher um Presente</h3>
+                    <div class="info-steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <p>Navegue pela lista de presentes abaixo</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <p>Clique no presente que deseja dar</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <p>Digite seu nome para reservar o item</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">4</span>
+                            <p>O presente ficará marcado com ✓ (rosa)</p>
+                        </div>
+                    </div>
+                    <p class="info-note">💡 <strong>Nota:</strong> Presentes reservados aparecem em rosa, mas apenas os noivos podem ver quem reservou cada item (no painel admin).</p>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <p>Se tiver qualquer dúvida, é só falar com a <span class="highlight-name">Deise</span> 💕</p>
+            </div>
+        </section>
+
+        <!-- Event Details Section -->
+        <section class="event-details" id="details">
+            <div class="section-divider">🌺</div>
+            <h2>Detalhes do <span class="highlight">Evento</span></h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-icon">📌</div>
+                    <div class="detail-content">
+                        <h3>Data:</h3>
+                        <p><span class="highlight">13 de Dezembro</span> de 2025</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">⏰</div>
+                    <div class="detail-content">
+                        <h3>Horário:</h3>
+                        <p><span class="highlight">Ás 15h</span></p>
+                    </div>
+                </div>
+                <div class="detail-item full-width">
+                    <div class="detail-icon">📍</div>
+                    <div class="detail-content">
+                        <h3>Local:</h3>
+                        <p>Rua Felicidade 123<br></p>
+                        <a href="https://www.google.com/maps" target="_blank" class="maps-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Ver no Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="kitchen-icons">
+                <span class="icon">🥄</span>
+                <span class="icon">🍴</span>
+                <span class="icon">🥢</span>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="rsvp-section" id="rsvp">
+            <div class="section-divider">🌸</div>
+            <h2>Confirme sua <span class="highlight">Presença</span></h2>
+            <div class="rsvp-form-container">
+                <form id="rsvpForm" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="guestName">Nome(s) dos Convidados</label>
+                        <input type="text" id="guestName" name="guestName" required placeholder="Digite seu(s) nome(s)">
+                    </div>
+                    <div class="form-group">
+                        <label for="guestCount">Número de Pessoas</label>
+                        <select id="guestCount" name="guestCount" required>
+                            <option value="">Selecione</option>
+                            <option value="1">1 pessoa</option>
+                            <option value="2">2 pessoas</option>
+                            <option value="3">3 pessoas</option>
+                            <option value="4">4 pessoas</option>
+                            <option value="5">5 pessoas</option>
+                            <option value="6">6 pessoas</option>
+                            <option value="7">7 pessoas</option>
+                            <option value="8">8 pessoas</option>
+                            <option value="9">9 pessoas</option>
+                            <option value="10">+10 pessoas</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Confirmar Presença</button>
+                </form>
+                <div id="rsvpConfirmation" class="confirmation-message" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- Gift Registry Section -->
+        <section class="gift-registry" id="gifts">
+            <div class="section-divider">🌺</div>
+            <h2>Lista de <span class="highlight">Presentes</span></h2>
+            <p class="gift-subtitle">Clique no(s) presente(s) que você irá comprar para <span class="highlight">presentear</span> o casal</p>
+            <div id="giftList" class="gift-categories"></div>
+            <div class="kitchen-icons">
+                <span class="icon">🎁</span>
+                <span class="icon">💝</span>
+                <span class="icon">🎀</span>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="flower-decoration flower-bottom-left"></div>
+            <div class="flower-decoration flower-bottom-right"></div>
+            <p>Com amor, esperamos por você! 💕</p>
+            <div class="footer-credits">
+                <p class="footer-decorative">“O amor tudo sofre, tudo crê, tudo espera, tudo suporta.” -1 CR 13:7</p>
+                <p class="footer-author">Feito por <a href="https://www.instagram.com/thaygodev" target="_blank" class="footer-link">Thiago Araújo</a></p>
+            </div>
+            <button id="adminBtn" class="admin-link">Admin</button>
+        </footer>
+    </div>
+
+    <!-- Gift Modal -->
+    <div id="giftModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h3>Reservar Presente</h3>
+            <p id="modalGiftName" class="modal-gift-name"></p>
+            <form id="giftReservationForm">
+                <div class="form-group">
+                    <label for="reservationName">Seu Nome</label>
+                    <input type="text" id="reservationName" name="reservationName" required placeholder="Digite seu nome">
+                </div>
+                <button type="submit" class="submit-btn">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Modal -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content admin-modal">
+            <button class="modal-close" id="adminModalClose">&times;</button>
+            <div id="adminLogin" class="admin-login">
+                <h3>Acesso Restrito</h3>
+                <form id="adminLoginForm">
+                    <div class="form-group">
+                        <label for="adminPassword">Senha</label>
+                        <input type="password" id="adminPassword" name="adminPassword" required placeholder="Digite a senha">
+                    </div>
+                    <button type="submit" class="submit-btn">Entrar</button>
+                </form>
+                <p id="adminError" class="error-message" style="display: none;"></p>
+            </div>
+            <div id="adminContent" class="admin-content" style="display: none;">
+                <h3>Painel Administrativo</h3>
+                <div class="admin-section">
+                    <h4>Confirmações de Presença</h4>
+                    <div id="adminRsvpList" class="admin-list"></div>
+                </div>
+                <div class="admin-section">
+                    <h4>Presentes Reservados</h4>
+                    <div id="adminGiftList" class="admin-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs (compat) + project config -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
